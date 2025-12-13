@@ -29,7 +29,7 @@ Thumbs.db
 
 # Notebook checkpoints
 .ipynb_checkpoints
-notebook*.ipynb
+*.ipynb
 
 # Test files
 test_*.py
@@ -41,3 +41,10 @@ README.md
 
 # Logs
 *.log
+
+# Large dataset (not needed for production)
+diabetes_prediction_dataset.csv
+
+# Backend extras
+backend/requirements.txt
+backend/serve_frontend.py
