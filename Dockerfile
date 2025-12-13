@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 # Install Python packages
 RUN pip install --no-cache-dir --target=/app/dependencies \
-    Flask==3.0.0 \
+    Flask==3.1.0 \
     torch==2.1.0+cpu --index-url https://download.pytorch.org/whl/cpu \
     numpy==1.24.3 \
     scikit-learn==1.3.0 \
