@@ -40,6 +40,7 @@ EXPOSE 5000
 # Environment variables
 ENV PYTHONUNBUFFERED=1
 ENV PYTHONDONTWRITEBYTECODE=1
+ENV PORT=5000
 
 # Run with gunicorn
-CMD ["gunicorn", "--bind", "0.0.0.0:5000", "--timeout", "120", "--workers", "1", "backend.app:app"]
+CMD gunicorn --bind 0.0.0.0:$PORT --timeout 120 --workers 1 backend.app:app
