@@ -31,7 +31,7 @@ COPY frontend ./frontend
 COPY best_model.pth .
 COPY gender_encoder.pkl .
 COPY smoke_encoder.pkl .
-COPY scaler\ \(1\).pkl .
+COPY scaler.pkl .
 
 # Expose port
 EXPOSE 5000

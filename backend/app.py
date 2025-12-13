@@ -9,7 +9,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 FRONTEND_DIR = BASE_DIR / 'frontend'
 MODEL_PATH = BASE_DIR / 'best_model.pth'
 SCALER_JSON_PATH = BASE_DIR / 'scaler_stats.json'
-SCALER_PKL_CANDIDATES = [BASE_DIR / 'scaler (1).pkl', BASE_DIR / 'scaler.pkl']
+SCALER_PKL_CANDIDATES = [BASE_DIR / 'scaler.pkl']
 GENDER_ENCODER_PATH = BASE_DIR / 'gender_encoder.pkl'
 SMOKE_ENCODER_PATHS = [BASE_DIR / 'smoke_encoder.pkl', BASE_DIR / 'smoking_history_encoder.pkl']
 
