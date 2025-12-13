@@ -24,6 +24,7 @@ WORKDIR /app
 
 # Copy only the dependencies from builder
 COPY --from=builder /app/dependencies /usr/local/lib/python3.11/site-packages
+COPY --from=builder /app/dependencies/bin/* /usr/local/bin/
 
 # Copy application files
 COPY backend ./backend
