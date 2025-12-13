@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediPredict AI - Diabetes Risk Assessment</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <circle cx="16" cy="16" r="14" stroke="#10b981" stroke-width="2" fill="none"/>
+                    <path d="M16 6 L16 26 M10 16 L22 16" stroke="#10b981" stroke-width="2.5" stroke-linecap="round"/>
+                </svg>
+                <span>MediPredict AI</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#assessment" class="nav-link">Assessment</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">Clinical Diabetes <br><span class="gradient-text">Risk Assessment</span></h1>
+            <p class="hero-subtitle">Enterprise-grade predictive analytics powered by advanced neural network technology</p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number">98.5%</div>
+                    <div class="stat-label">Accuracy</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100K+</div>
+                    <div class="stat-label">Trained Cases</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">5 Layers</div>
+                    <div class="stat-label">Neural Network</div>
+                </div>
+            </div>
+            <div class="hero-buttons">
+                <a href="#assessment" class="btn-primary">Start Assessment</a>
+                <a href="#about" class="btn-secondary">Learn More</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="pulse-circle"></div>
+            <div class="pulse-circle-2"></div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">About Our AI Model</h2>
+                <p class="section-subtitle">State-of-the-art deep learning architecture for diabetes prediction</p>
+            </div>
+            
+            <div class="model-details">
+                <div class="model-card">
+                    <div class="model-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2">
+                            <circle cx="12" cy="12" r="3"/>
+                            <circle cx="6" cy="6" r="2"/>
+                            <circle cx="18" cy="6" r="2"/>
+                            <circle cx="6" cy="18" r="2"/>
+                            <circle cx="18" cy="18" r="2"/>
+                            <line x1="9" y1="12" x2="6" y2="15"/>
+                            <line x1="15" y1="12" x2="18" y2="15"/>
+                            <line x1="9" y1="12" x2="6" y2="9"/>
+                            <line x1="15" y1="12" x2="18" y2="9"/>
+                        </svg>
+                    </div>
+                    <h3>Neural Network Architecture</h3>
+                    <ul class="model-specs">
+                        <li><strong>Input Layer:</strong> 8 clinical features</li>
+                        <li><strong>Hidden Layer 1:</strong> 128 neurons + BatchNorm + ReLU</li>
+                        <li><strong>Hidden Layer 2:</strong> 256 neurons + Dropout (0.3)</li>
+                        <li><strong>Hidden Layer 3:</strong> 128 neurons + BatchNorm</li>
+                        <li><strong>Hidden Layer 4:</strong> 64 neurons + Dropout (0.2)</li>
+                        <li><strong>Output Layer:</strong> 1 neuron + Sigmoid activation</li>
+                    </ul>
+                </div>
+
+                <div class="model-card">
+                    <div class="model-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2">
+                            <line x1="12" y1="20" x2="12" y2="10"/>
+                            <line x1="18" y1="20" x2="18" y2="4"/>
+                            <line x1="6" y1="20" x2="6" y2="16"/>
+                        </svg>
+                    </div>
+                    <h3>Training Details</h3>
+                    <ul class="model-specs">
+                        <li><strong>Dataset:</strong> 100,000 patient records</li>
+                        <li><strong>Framework:</strong> PyTorch 2.9.1</li>
+                        <li><strong>Optimizer:</strong> Adam with learning rate optimization</li>
+                        <li><strong>Loss Function:</strong> Binary Cross-Entropy</li>
+                        <li><strong>Regularization:</strong> Dropout + BatchNormalization</li>
+                        <li><strong>Validation:</strong> Cross-validated on test set</li>
+                    </ul>
+                </div>
+
+                <div class="model-card">
+                    <div class="model-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <circle cx="12" cy="12" r="6"/>
+                            <circle cx="12" cy="12" r="2"/>
+                        </svg>
+                    </div>
+                    <h3>Clinical Features</h3>
+                    <ul class="model-specs">
+                        <li><strong>Demographics:</strong> Age, Gender</li>
+                        <li><strong>Medical History:</strong> Hypertension, Heart Disease</li>
+                        <li><strong>Lifestyle:</strong> Smoking History</li>
+                        <li><strong>Biometrics:</strong> BMI (Body Mass Index)</li>
+                        <li><strong>Lab Results:</strong> HbA1c Level, Blood Glucose</li>
+                        <li><strong>Preprocessing:</strong> Label Encoding + Standard Scaling</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="tech-stack">
+                <h3>Technology Stack</h3>
+                <div class="tech-badges">
+                    <span class="tech-badge">PyTorch</span>
+                    <span class="tech-badge">Flask</span>
+                    <span class="tech-badge">scikit-learn</span>
+                    <span class="tech-badge">NumPy</span>
+                    <span class="tech-badge">Pandas</span>
+                    <span class="tech-badge">Deep Learning</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="assessment" class="assessment-section">
+        <div class="section-container">
+            <div class="assessment-card">
+                <div class="card-header">
+                    <h2>Patient Information</h2>
+                    <span class="badge">Secure & Confidential</span>
+                </div>
+
+                <form id="predict-form">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label>Gender</label>
+                            <select id="gender" required>
+                                <option value="" disabled selected>Select</option>
+                                <option value="Female">Female</option>
+                                <option value="Male">Male</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Age</label>
+                            <input id="age" type="number" min="1" max="120" placeholder="Enter age" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Hypertension</label>
+                            <select id="hypertension" required>
+                                <option value="" disabled selected>Select</option>
+                                <option value="0">No</option>
+                                <option value="1">Yes</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Heart Disease</label>
+                            <select id="heart_disease" required>
+                                <option value="" disabled selected>Select</option>
+                                <option value="0">No</option>
+                                <option value="1">Yes</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label>Smoking History</label>
+                            <select id="smoking_history" required>
+                                <option value="" disabled selected>Select smoking history</option>
+                                <option value="never">Never</option>
+                                <option value="No Info">No Information</option>
+                                <option value="former">Former Smoker</option>
+                                <option value="current">Current Smoker</option>
+                                <option value="ever">Ever Smoked</option>
+                                <option value="not current">Not Currently Smoking</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>BMI (kg/m²)</label>
+                            <input id="bmi" type="number" step="0.1" placeholder="e.g., 24.5" required>
+                        </div>
+                        <div class="form-group">
+                            <label>HbA1c Level (%)</label>
+                            <input id="hba1c" type="number" step="0.1" placeholder="e.g., 5.7" required>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label>Blood Glucose (mg/dL)</label>
+                            <input id="glucose" type="number" placeholder="e.g., 120" required>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        <span>Analyze Risk Profile</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M3 10h12m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </form>
+
+                <div id="result"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 MediPredict AI. All rights reserved.</p>
+            <p class="disclaimer">⚠️ For informational purposes only. Consult healthcare professionals for medical advice.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
