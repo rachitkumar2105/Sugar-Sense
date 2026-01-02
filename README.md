@@ -1,6 +1,6 @@
 ﻿# SugarSense — Diabetes Risk Assessment
 
-# SUGAR Prediction App
+# DIABETES Prediction App
 
 ## Deployment on Render
 
@@ -92,4 +92,5 @@ Railway notes
 This repo is provided "as-is" for demonstration purposes. Add a proper license if you plan to publish.
 
 — SugarSense Team
+
 
