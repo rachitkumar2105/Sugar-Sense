@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: health-prediction-api
+    env: docker
+    region: oregon
+    plan: free
+    branch: main
+    numInstances: 1
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
