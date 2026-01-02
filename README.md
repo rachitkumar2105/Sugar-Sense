@@ -72,10 +72,6 @@ Run container (map port):
 docker run -p 5000:5000 sugarsense:latest
 ```
 
-Railway notes
-- The Dockerfile is configured to use the `PORT` environment variable. Railway will assign the port automatically.
-- If you don't see a public URL, enable networking (Generate Domain) from the Railway project settings.
-
 **Model evaluation**
 - A `test_accuracy.py` script is included to evaluate model accuracy on the dataset. It was used to validate the model on a 10,000-row sample.
 
@@ -92,5 +88,6 @@ Railway notes
 This repo is provided "as-is" for demonstration purposes. Add a proper license if you plan to publish.
 
 — SugarSense Team
+
 
 
